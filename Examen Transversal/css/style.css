@@ -1,8 +1,23 @@
+@font-face{
+  font-family: miFuente;
+  src: url("fonts/Amelinda.ttf");
+}
+
+
+
+
+#cards_id_info{
+font-family: miFuente;
+
+
+}
 #btn_carrito{
 
   display: flex;
   align-items: center;
   background-color: white;
+  font-family: miFuente;
+  font-size: 25px;
 }
 .material-icons{
   font-size: 10px;
@@ -17,3 +32,60 @@ height: 100px;
 .bg-miColor{
   background-color: #fdcae1;
 }
+
+#id_cardtext{
+
+  font-size: 40px;
+  font-family: miFuente;
+  background-color: #fdcae1;
+}
+
+#id_cardtitle{
+  font-size: 80px;
+  text-align: center;
+  font-family: miFuente;
+  background-color: #fdcae1;
+}
+
+.dropdown-item{
+  font-family: miFuente;
+  font-size: 25px;
+}
+
+.nav-item{
+  font-family: miFuente;
+  font-size: 25px;
+  
+}
+
+#img_car{
+  border: solid red;
+ width: 500px;
+ height: 200;
+}
+
+#img_about{
+  border: solid red;
+  background-color: #fdcae1;
+}
+.nav-item:hover{
+  color: white;
+}
+
+#btn_carrito:hover{
+
+color:#fdcae1;
+}
+.dropdown-menu:hover{
+  color:#fdcae1;
+}
+
+.dropdown-item:hover{
+  border: solid red;
+  color: #fdcae1;
+  }
+  .dropdown-item{
+    border: solid red;
+    color: #fdcae1;
+    
+    }
