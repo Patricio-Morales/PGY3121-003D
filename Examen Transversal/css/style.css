@@ -89,3 +89,24 @@ color:#fdcae1;
     color: #fdcae1;
     
     }
+    .contenedorFooter{
+      width: 100%;
+      background-color: #fdcae1;
+      display: flex;
+      flex-direction: row;
+      font-family: miFuente;
+  }
+  .boxFooter{
+    width: 33.3%;
+    
+    padding: 20px;
+    margin-top: 20px;
+}
+.boxFooter p{
+  text-align: justify;
+}
+.box{
+  display: flex;
+  
+  align-items: center;
+}
