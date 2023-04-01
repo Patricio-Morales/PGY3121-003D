@@ -20,7 +20,7 @@ font-family: miFuente;
   font-size: 25px;
 }
 .material-icons{
-  font-size: 10px;
+  font-size: 15px;
   color: #e79eff;
 }
 .navbar-brand img{
@@ -35,13 +35,13 @@ height: 100px;
 
 #id_cardtext{
 
-  font-size: 40px;
+  font-size: 35px;
   font-family: miFuente;
   background-color: #fdcae1;
 }
 
 #id_cardtitle{
-  font-size: 80px;
+  font-size: 70px;
   text-align: center;
   font-family: miFuente;
   background-color: #fdcae1;
@@ -59,16 +59,17 @@ height: 100px;
 }
 
 #img_car{
-  border: solid red;
- width: 500px;
- height: 200;
+
+  width: 500px;
+  height: 200;
 }
 
 #img_about{
-  border: solid red;
+
   background-color: #fdcae1;
 }
 .nav-item:hover{
+
   color: white;
 }
 
@@ -81,32 +82,49 @@ color:#fdcae1;
 }
 
 .dropdown-item:hover{
-  border: solid red;
+
   color: #fdcae1;
-  }
-  .dropdown-item{
-    border: solid red;
-    color: #fdcae1;
+}
+.dropdown-item{
+  color: #fdcae1;
     
-    }
-    .contenedorFooter{
+}
+.contenedorFooter{
+
       width: 100%;
       background-color: #fdcae1;
       display: flex;
       flex-direction: row;
       font-family: miFuente;
+      color: black;
   }
   .boxFooter{
     width: 33.3%;
     
     padding: 20px;
     margin-top: 20px;
+    
 }
 .boxFooter p{
   text-align: justify;
 }
 .box{
   display: flex;
-  
+
   align-items: center;
 }
+
+.box h3{
+  margin-left: 20px;
+}
+
+.miniBox img{
+  width: 30px;
+  height: 30px;
+}
+
+.miniBox a:hover{
+
+  color: white;
+}
+
