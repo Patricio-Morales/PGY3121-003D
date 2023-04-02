@@ -39,21 +39,39 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Mas Categorias</a></li>
+              <li><a class="dropdown-item" href="categorias_prod.html">Mas Categorias</a></li>
             </ul>
           </li>
         </ul>
 
-        <a href="index.html" class="text-decoration-none">
-          <button id="btn_carrito" type="submit" class="btn btn-color">
-            <i class="material-icons">shopping_cart</i>Carrito</button>
+        
+        <button id="btn_carrito" type="submit" class="btn btn-color"data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <i class="material-icons">shopping_cart</i>Carrito</button>
 
-        </a>
+        
 
 
       </div>
     </div>
   </nav>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de compras</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="card" style="width: 18rem;">
+          <img src="img/producto_lapiz1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 id="titulo_prod"class="card-title">Caja de 12 lapices de colores Faber Castell</h5>
+              <p id="card_btext" class="card-text">Precio: $3.990</p>
+          </div>
+        </div>
+    </div>
+    <button id="btn5" type="submit" class="btn btn-primary--bs-dark-text-emphasis" data-bs-dismiss="offcanvas" data-bs-target="offcanvasRight">Pagar</button>
+  </div>
+
 
 
   <div class="container">
@@ -96,28 +114,27 @@
 </body>
 <footer>
   <div class="contenedorFooter">
-
-    <div class="boxFooter">
+ <div class="boxFooter">
       <h3>Redes Sociales</h3>
 
       <div class="miniBox">
-          <img src="img/instagram extremadamente rosado.png" alt="">
-          <a href="http://www.instagram.com" class="text-decoration-none">
-            <h3>instagram</h3>
-          </a>
+        <img src="img/instagram_ico.png" alt="">
+        <a href="http://www.instagram.com" class="text-decoration-none">
+          <h3>instagram</h3>
+        </a>
       </div>
 
       <div class="miniBox">
-        <img src="img/facobook mas rosado}.png" alt="">
+        <img src="img/facebook_ico.png" alt="">
         <a href="http://www.facebook.com" class="text-decoration-none">
           <h3>facebook</h3>
         </a>
       </div>
 
       <div class="miniBox">
-        <img src="img/whatsapp rosado.png" alt="">
+        <img src="img/whatsapp_ico.png" alt="">
         <h3>Whatsapp</h3>
-        <h3>+569 76657869</h3>
+          <h3>+569 76657869</h3>
       </div>
 
     </div>
@@ -125,12 +142,12 @@
     <div class="boxFooter">
       <h1>Contacto</h1>
       <div class="box">
-        <i class="material-icons">home</i>
+        <i  id="ico_footer" class="material-icons">home</i>
         <h3>Avda. Siempre viva 777</h3>
       </div>
 
       <div class="box">
-        <i class="material-icons">email</i>
+        <i id="ico_footer"class="material-icons">email</i>
         <h3>contacto.pappercute@gmail.com</h3>
       </div>
     </div>

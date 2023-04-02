@@ -100,10 +100,14 @@ color:#fdcae1;
   }
   .boxFooter{
     width: 33.3%;
-    
     padding: 20px;
     margin-top: 20px;
-    
+}
+
+.boxFooter2{
+  width: 33.3%;
+  padding: 20px;
+  margin-top: 20px;
 }
 .boxFooter p{
   text-align: justify;
@@ -118,6 +122,11 @@ color:#fdcae1;
   margin-left: 20px;
 }
 
+
+.miniBox{
+  display: flex;
+  align-items: center;
+}
 .miniBox img{
   width: 30px;
   height: 30px;
@@ -128,3 +137,107 @@ color:#fdcae1;
   color: white;
 }
 
+.miniBox h3{
+margin-left: 10px;
+}
+
+#ico_footer{
+  font-size: 30px;
+}
+
+#btn_carrusel{
+font-size: 100px;
+}
+.card-title{
+
+  font-size: 40px;
+}
+.card-body{
+
+  font-size: 20px;
+}
+
+#btn1{
+  font-size: 25px;
+  background-color:  #fdcae1;
+  font-family: miFuente;
+}
+#titulo_prod{
+  font-size: 25px;
+  font-family: miFuente;
+}
+#card_btext{
+  font-size: 30px;
+  font-family: miFuente;
+}
+
+#btn2{
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  background-color:  #fdcae1;
+  font-family: miFuente;
+}
+
+#btn2:hover{
+  color: white;
+}
+
+.nav-link:hover{
+  color: white;
+}
+
+#btn_modal2{
+  font-size: 20px;
+  font-family: miFuente;
+  background-color: #fdcae1;
+}
+#btn_modal1{
+
+  font-size: 20px;
+  font-family: miFuente;
+  background-color: #fdcae1;
+
+}
+
+#btn_modal1:hover{
+color: white;
+}
+#btn_modal2:hover{
+  color:white;
+}
+.modal-body{
+  font-size: 22px;
+  font-family: miFuente;
+}
+#exampleModalLabel{
+  font-family: miFuente;
+  font-size: 30px;
+  text-align: center;
+}
+.modal-header{
+  background-color: #fdcae1;
+}
+
+.offcanvas-title{
+  font-size: 40px;
+  font-family: miFuente;
+}
+
+.offcanvas-header{
+  background-color: #fdcae1;
+}
+
+#btn5{
+  background-color: #fdcae1;
+  font-family: miFuente;
+  font-size: 35px;
+}
+
+#btn1:hover{
+ color: white;
+}
+
+#btn5:hover{
+  color: white;
+}
