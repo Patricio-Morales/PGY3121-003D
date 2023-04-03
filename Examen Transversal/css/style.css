@@ -241,3 +241,42 @@ color: white;
 #btn5:hover{
   color: white;
 }
+
+#tituloForm{
+
+font-family: miFuente;
+}
+
+#btnEditar{
+  background-color: #fdcae1;
+  font-size: 20px;
+}
+#btnEliminar{
+  background-color: red;
+  font-size: 20px;
+}
+
+#tabla_prod{
+  font-family: miFuente;
+  font-size: 20px;
+}
+#SKU{
+  font-family: miFuente;
+  font-size: 20px;
+}
+
+#btnEliminar2{
+  font-family: miFuente;
+  background-color: red;
+  font-size: 20px;
+}
+
+#btnEditar:hover{
+  color: white;
+}
+#btnEliminar:hover{
+  color: white;
+}
+#btnEliminar2:hover{
+  color: white;
+}
