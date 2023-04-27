@@ -1,0 +1,38 @@
+body.dark{
+    background-color: #191919;
+  }
+  
+  body.dark nav{
+    background-color: #71115a
+  }
+  
+  
+  body.dark  footer .contenedorFooter{
+    background-color: #71115a;
+  }
+
+  body.dark nav .nav-link{
+    color:white;
+  }
+
+  body.dark nav .nav-link:hover{
+    color:red;
+  }
+
+  body.dark  footer .contenedorFooter .miniBox a{
+    color:white;
+  }
+  
+  body.dark  footer .contenedorFooter .miniBox h3{
+    color:white;
+  }
+  body.dark  footer .contenedorFooter .miniBox h3:hover{
+    color:red;
+  }
+  body.dark  footer .contenedorFooter .boxFooter h3{
+    color:white;
+  }
+
+  body.dark  footer .contenedorFooter .boxFooter h1{
+    color:white;
+  }
