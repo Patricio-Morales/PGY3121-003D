@@ -16,7 +16,7 @@ body.dark{
   }
 
   body.dark nav .nav-link:hover{
-    color:red;
+    color:#ae3dff;
   }
 
   body.dark  footer .contenedorFooter .miniBox a{
@@ -27,7 +27,7 @@ body.dark{
     color:white;
   }
   body.dark  footer .contenedorFooter .miniBox h3:hover{
-    color:red;
+    color:#ae3dff;
   }
   body.dark  footer .contenedorFooter .boxFooter h3{
     color:white;
@@ -36,3 +36,127 @@ body.dark{
   body.dark  footer .contenedorFooter .boxFooter h1{
     color:white;
   }
+
+  body.dark .card-body{
+    background-color:  #3E065F;
+    color:white;
+  }
+  body.dark #btn1{
+    background-color: #71115a;
+    color:white;
+  }
+
+  body.dark #btn1:hover{
+    color:#ae3dff;
+  }
+
+  body.dark #btn_carrito{
+background-color: #3E065F;
+color: white;
+  }
+  body.dark #btn_carrito:hover{
+  color: #ae3dff;
+  }
+  
+ body.dark #btn2{
+  background-color:  #71115a;
+  color: white;
+ }
+ body.dark #btn2:hover{
+  color: #ae3dff;
+ }
+
+ body.dark #id_cardtitle{
+  background-color: #3E065F;
+ }
+
+ body.dark #id_cardtext{
+  background-color: #3E065F;
+ }
+
+ body.dark #tituloForm{
+  color: white;
+ }
+
+ body.dark #tabla_prod{
+  color:white
+ }
+
+ body.dark #btnEditar{
+  background-color: #3E065F;
+  color: white;
+ }
+
+ body.dark #btnEliminar{
+  color: white;
+ }
+
+ body.dark #btnEditar:hover{
+  color: #ae3dff;
+ }
+
+ body.dark #btnEliminar:hover{
+  color: #ae3dff;
+ }
+
+ body.dark nav .dropdown-menu{
+  background-color:  #71115a;
+  color: white;
+ }
+
+ body.dark nav .dropdown-item:hover{
+  background-color:#71115a;
+  color:  #ae3dff;
+ }
+
+ body.dark nav .dropdown-item{
+  color: white;
+ }
+
+ body.dark .offcanvas-header{
+  background-color: #3E065F;
+  color:white;
+
+ }
+
+ body.dark .offcanvas-body{
+  background-color: #191919;
+ }
+
+ body.dark #btn5{
+  background-color: #3E065F;
+  color: white;
+ }
+ 
+ body.dark .modal-content{
+  background-color: #3E065F;
+ }
+ body.dark .modal-header{
+  background-color: #3E065F;
+  color:white;
+ }
+
+ body.dark .modal-body{
+  background-color: #191919;
+  color:white;
+ }
+
+ body.dark #btn_modal1{
+  background-color:#71115a;
+  color:white;
+ }
+
+ body.dark #btn_modal2{
+  background-color:#71115a;
+  color:white;
+ }
+
+ body.dark #btn_modal1:hover{
+  
+  color:#ae3dff;
+ }
+
+ body.dark #btn_modal2:hover{
+  
+  color:#ae3dff;
+ }

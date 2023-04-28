@@ -80,16 +80,16 @@ color:#fdcae1;
 }
 .dropdown-menu:hover{
   color:#fdcae1;
-}
 
+}
+.dropdown-menu{
+ background-color: #fdcae1;
+}
 .dropdown-item:hover{
+  background-color: #fdcae1;
+  color: white;
+}
 
-  color: #fdcae1;
-}
-.dropdown-item{
-  color: #fdcae1;
-    
-}
 .contenedorFooter{
 
       width: 100%;
@@ -373,3 +373,4 @@ right:0;
   background: none;
   color: #fff;
 }
+
