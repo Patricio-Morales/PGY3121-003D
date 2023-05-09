@@ -16,7 +16,8 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-miColor">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="img/Logo 3 Rosado.png" alt=""></a>
+      
+      <a class="navbar-brand" href="#"><img src="img/Logo5.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,15 +41,42 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="agregar_productos.html">Agregar productos</a></li>
+              <li><a class="dropdown-item" href="inventario.html">Inventario</a></li>
             </ul>
           </li>
         </ul>
 
-        <button class="switch" id="switch">
-					<span><i class="fas fa-sun"></i></span>
-					<span><i class="fas fa-moon"></i></span>
-				</button>
+        
+         
+        
+        
+       
+        <div class="wach">
+          <div class="widget">
+                    <div class="fecha">
+                      <p id="diaSemana" class="diaSemana"></p>
+                      <p id="dia"  class="dia"></p>
+                      <p>de</p>
+                      <p id="mes" class="mes"></p>
+                      <p>del</p>
+                      <p id="year" class="year"></p>
+        
+                    </div>
+                    <div class="reloj">
+                      <p id="horas" class="horas"></p>
+                      <p>:</p>
+                      <p id="minutos" class="minutos"></p>
+                      
+        
+                    </div>
+          </div>
+          </div>
+
+          <button class="switch" id="switch">
+            <span><i class="fas fa-sun"></i></span>
+            <span><i class="fas fa-moon"></i></span>
+          </button>
+  
         
         <button id="btn_carrito" type="submit" class="btn btn-color"data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
           <i class="material-icons">shopping_cart</i>Carrito</button>
@@ -78,11 +106,11 @@
 
 
 
-  <div class="container">
+  <div class="container mt-5 mb-5">
     <div id="img_about" class="card mb-3 mt-3" style="max-width: 1500px;">
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="img/Logo 3 Rosado.png" class="img-fluid rounded-start" alt="...">
+          <img src="img/Logo5.png" class="img-fluid rounded-start" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -115,6 +143,7 @@
     integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
     crossorigin="anonymous"></script>
     <script src="js/functions.js"></script>
+    <script src="js/reloj.js"></script>
 </body>
 <footer>
   <div class="contenedorFooter">

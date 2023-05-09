@@ -18,7 +18,8 @@ font-family: miFuente;
   align-items: center;
   background-color: white;
   font-family: miFuente;
-  font-size: 25px;
+  font-size: 30px;
+  justify-content: end;
 }
 .material-icons{
   font-size: 15px;
@@ -39,6 +40,7 @@ height: 100px;
   font-size: 35px;
   font-family: miFuente;
   background-color: #fdcae1;
+  margin-bottom: 100px;
 }
 
 #id_cardtitle{
@@ -100,16 +102,21 @@ color:#fdcae1;
       color: black;
   }
   .boxFooter{
-    width: 33.3%;
+    width: 75%;
     padding: 20px;
     margin-top: 20px;
+    
 }
-
 .boxFooter2{
-  width: 33.3%;
+  width: 75%;
   padding: 20px;
   margin-top: 20px;
+  margin-right: 50px;
 }
+
+
+
+
 .boxFooter p{
   text-align: justify;
 }
@@ -164,7 +171,7 @@ font-size: 100px;
   font-family: miFuente;
 }
 #titulo_prod{
-  font-size: 25px;
+  font-size: 30px;
   font-family: miFuente;
 }
 #card_btext{
@@ -259,8 +266,13 @@ font-family: miFuente;
 
 #tabla_prod{
   font-family: miFuente;
-  font-size: 20px;
+  font-size: 25px;
+  align-items: center;
+  text-align:center;
+  margin-bottom: 325px;
 }
+
+
 #SKU{
   font-family: miFuente;
   font-size: 20px;
@@ -314,7 +326,7 @@ font-family: miFuente;
   left:0;
   right:unset;
   border-radius: 3rem;
-  transition: all .5s ease;
+  transition: all .8s ease;
 
   content: "";
 }
@@ -327,7 +339,7 @@ right:0;
 }
 
 .switch {
-  background: #343D5B;
+  background:#3E065F;
   border-radius: 1000px;
   border: none;
   position: relative;
@@ -336,6 +348,7 @@ right:0;
   display: -ms-flexbox;
   display: flex;
   outline: none;
+  margin-right: 20px;
 }
 
 .switch::after {
@@ -356,7 +369,7 @@ right:0;
 }
 
 .switch.active {
-  background: orange;
+  background: #fdcae1;
   color: #000;
 }
 
@@ -374,3 +387,64 @@ right:0;
   color: #fff;
 }
 
+#agregar_prod{
+  margin-bottom: 100px;
+}
+ #btnAgregar{
+  background-color: #a3ffac;
+  font-family: miFuente;
+  display: flex;
+  flex-direction: column;
+  font-size: 35px;
+ }
+
+ #btnVolver{
+  background-color: #fdcae1;
+  display: flex;
+  flex-direction: column;
+  font-family: miFuente;
+  font-size: 35px;
+ }
+
+ #btnAgregar:hover{
+color: white;
+ }
+ #btnVolver:hover{
+  color: white;
+ }
+ .wach{
+  width: 90%;
+  max-width: 1000px;
+  margin-right: 40px;
+}
+
+.widget{
+ width: 40%;
+ margin: 2px;
+
+}
+.widget p {
+  display: inline-block;
+  line-height: 1em;
+}
+.fecha{
+font-family: miFuente;
+text-align: center;
+font-size: 1.5em;
+padding-left: 20px;
+width: 100%;
+}
+.reloj{
+  font-family: miFuente;
+  width: 100%;
+  padding-left: 20px;
+  font-size: 1.5em;
+  text-align: center;
+ 
+}
+.reloj .caja-segundos{
+  display: inline-block;
+}
+small{
+  color: red;
+}

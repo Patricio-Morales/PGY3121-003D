@@ -26,10 +26,19 @@ body.dark{
   body.dark  footer .contenedorFooter .miniBox h3{
     color:white;
   }
+
+  
   body.dark  footer .contenedorFooter .miniBox h3:hover{
     color:#ae3dff;
   }
   body.dark  footer .contenedorFooter .boxFooter h3{
+    color:white;
+  }
+  body.dark  footer .contenedorFooter .boxFooter2 h3{
+    color:white;
+  }
+
+  body.dark  footer .contenedorFooter .boxFooter2 h1{
     color:white;
   }
 
@@ -160,3 +169,33 @@ color: white;
   
   color:#ae3dff;
  }
+
+ body.dark #img_about{
+  background-color:#3E065F;
+ }
+
+ body.dark #btnAgregar{
+
+  background-color: #1b7549;
+  color: white;
+ }
+
+ body.dark #btnAgregar:hover{
+  color:#ae3dff;
+ }
+
+ body.dark #btnVolver{
+  color: white;
+  background-color:#3E065F;
+ }
+ body.dark #btnVolver:hover{
+  color:#ae3dff;
+ }
+
+ body.dark .reloj{
+
+  color: white;
+ }
+body.dark .fecha{
+  color: white;
+}
