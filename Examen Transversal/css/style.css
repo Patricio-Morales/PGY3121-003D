@@ -448,3 +448,40 @@ width: 100%;
 small{
   color: red;
 }
+#txtTitulo{
+  margin-bottom: 20px;
+  font-family: miFuente;
+  text-align: center;
+  font-size: 50px;
+}
+
+#txtSku{
+
+  font-family: miFuente;
+  font-size: 25px;
+  
+}
+
+#txtProd{
+  font-family: miFuente;
+  font-size: 25px;
+
+}
+
+#txtCant{
+  font-family: miFuente;
+  font-size: 25px;
+
+}
+
+#label2{
+  font-family: miFuente;
+  font-size: 20px;
+}
+
+.error{
+  color: red;
+  font-family: miFuente;
+  font-size: 23px;
+  text-align: center;
+}

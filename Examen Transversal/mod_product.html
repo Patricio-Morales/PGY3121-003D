@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/dark_mode.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/dark_mode.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <title>Inventario</title>
 </head>
 <body>
@@ -84,32 +83,37 @@
     </div>
   </div>
 </nav>
-<div class="container mt-5 ">
-    <div id="agregar_prod" class="container text-center">
-        <h1 id="tituloForm">Modificar Productos</h1>
-        <br>
-        <div class="form-floating mb-6">
-          <input  onblur="validarAgregarSku()" id="txtSku"type="text" class="form-control md-3" id="floatingInput" placeholder="EJ:216252ASQ">
-          <label id="SKU"for="floatingInput">Codigo del producto o SKU</label>
-          <small id="valSku">Debe ingresar codigo del producto o SKU</small>
-        </div>
-        <br>
-        <div class="form-floating mb-3">
-          <input onblur="validarAgregarNomProd()" id="txtProd"type="text" class="form-control" id="floatingInput" placeholder="EJ:Cuaderno">
-          <label id="SKU"for="floatingInput">Nombre del Producto</label>
-          <small id="valProd">Debe ingresar el Nombre del Producto</small>
-        </div>
-        <br>
-        <div class="form-floating mb-3">
-          <input onblur="validarCantidad()" id="txtCant"type="text" class="form-control" id="floatingInput" placeholder="EJ:Cuaderno">
-          <label id="SKU"for="floatingInput">Cantidad del Producto</label>
-          <small id="valCant">Debe ingresar la cantidad del producto</small> 
-        </div>
+<div class="container mt-5 mb-5">
+  <form action="" id="formMod">
+  <div class="row">
+    <h1 id="txtTitulo">Modificar Producto</h1>
+    <div class="col">
+      <label id="label2" for="txtSku">Codigo del producto o SKU:</label>
+      <input  name ="sku" class="form-control" id="txtSku" type="text" placeholder="EJ: 131SDASD1231">
+      <br>
+    </div>
+    <br>
+    <div class="col">
+      <label id="label2"for="txtProd">Nombre del Producto:</label>
+      <input name ="prod" class="form-control" id="txtProd" type="text" placeholder="EJ: Pegamento 123">
+      <br>
+    </div>
+    <br>
+    <div class="col">
+      <label id="label2"for="txtCant">Cantidad del Producto:</label>
+      <input  name ="cant" class="form-control" id="txtCant" type="text" placeholder="EJ: Pegamento 123">
+      <br>
+    </div>
+    
+      <button   id="btnAgregar"  type="+" class="btn btn-primary--bs-dark-text-emphasis btn-lg ">Modificar</button> 
+      <a id="btnVolver" href="inventario.html" class="btn btn-secondary--bs-dark-text-emphasis  btn-lg mt-5 mb-5">Volver</a>
+    
+  </div>
+</form>
 </div>
 
 
-    <a  href="inventario.html" id="btnAgregar"class="btn btn-primary--bs-dark-text-emphasis btn-lg ">Modificar</a> 
-    <a id="btnVolver" href="inventario.html" class="btn btn-secondary--bs-dark-text-emphasis  btn-lg mt-5 mb-5">Volver</a>
+  
 </div>
 
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -146,6 +150,9 @@
           </div>
         </div>
       </div>
+      <script src="js/jquery-3.6.4.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
+     <script src="js/validarFormJquery.js"></script>
       <script src="js/reloj.js"></script>
       <script src="js/functions.js"></script>
       <script src="https://kit.fontawesome.com/a7b01b7ebc.js" crossorigin="anonymous"></script>
