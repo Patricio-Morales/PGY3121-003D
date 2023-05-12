@@ -13,7 +13,7 @@
   <title>Bienvenido a PaperCute</title>
 </head>
 
-<body onload="consumoApi()">
+<body>
   <nav class="navbar navbar-expand-lg navbar-light bg-miColor">
     <div class="container-fluid">
       
@@ -66,12 +66,14 @@
                       <p id="horas" class="horas"></p>
                       <p>:</p>
                       <p id="minutos" class="minutos"></p>
-                      
+                      <p>:</p>
+                      <p id="segundos" class="segundos"></p>
         
                     </div>
           </div>
+          
           </div>
-
+         
           <button class="switch" id="switch">
             <span><i class="fas fa-sun"></i></span>
             <span><i class="fas fa-moon"></i></span>
@@ -80,6 +82,9 @@
         
         <button id="btn_carrito" type="submit" class="btn btn-color"data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
           <i class="material-icons">shopping_cart</i>Carrito</button>
+
+
+          <button onclick ="consumoApi()" id="btnTiempo" class="btn btn-color">Ver tiempo de hoy</button>
       
         
 
@@ -116,8 +121,8 @@
     <div class="row align-items-start">
       <div class="col mt-5 mb-3">
         <div class="card" style="width: 18rem;">
-          <img src="img/Lapices_ico.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
+          <img id="img-1" src="img/Lapices_ico.jpg" class="card-img-top" alt="...">
+          <div id="texto" class="card-body">
             <p class="card-text">Tenemos mucha variedades de lapices para tus diferentes proyectos.</p>
             <a id="btn1" href="lapices.html" class="btn btn-primary--bs-dark-text-emphasis">Nuestro Catálogo</a>
           </div>
@@ -125,8 +130,8 @@
       </div>
       <div class="col mt-5 mb-3">
         <div class="card" style="width: 18rem;">
-          <img src="img/cuadernos_ico.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
+          <img id="img-2" src="img/cuadernos_ico.jpg" class="card-img-top" alt="...">
+          <div id="btn"class="card-body">
             <p class="card-text">Variados modelos de cuadernos para que estudies con el mejor estilo.</p>
             <a id="btn1"href="cuadernos.html" class="btn btn-primary--bs-dark-text-emphasis">Nuestro Catálogo</a>
           </div>
@@ -135,8 +140,8 @@
       </div>
       <div class="col mt-5 mb-3">
         <div class="card" style="width: 18rem;">
-          <img src="img/Logo Papelería taza kawaii rosa(3).jpg" class="card-img-top" alt="...">
-          <div class="card-body">Aqui puedes buscar los accesorios mas kawaii para que tu oficina sea la mas cool. 
+          <img id="img-3" src="img/Logo Papelería taza kawaii rosa(3).jpg" class="card-img-top" alt="...">
+          <div id="texto-3" class="card-body">Aqui puedes buscar los accesorios mas kawaii para que tu oficina sea la mas cool. 
             <p class="card-text"></p>
             <a id="btn1"href="acc_ofi.html" class="btn btn-primary--bs-dark-text-emphasis">Nuestro Catálogo</a>
           </div>
@@ -168,7 +173,7 @@
     </div>
 
   
-    
+    <script src="js/jquery-3.6.4.min.js"></script>
     <script src="https://kit.fontawesome.com/a7b01b7ebc.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
@@ -216,7 +221,11 @@
       </div>
     </div>
     <div class="boxFooter3">
-      
+      <div class="container" >
+        <img id="imagen" src="" alt="">
+        <h4 id="cuidad"></h4>
+        <h4 id="clima"></h4> <h4 id="temperatura"></h4>
+    </div>
     </div>
     
 

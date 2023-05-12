@@ -413,9 +413,11 @@ color: white;
   color: white;
  }
  .wach{
+
   width: 90%;
   max-width: 1000px;
   margin-right: 40px;
+  margin-left: 175px;
 }
 
 .widget{
@@ -431,13 +433,13 @@ color: white;
 font-family: miFuente;
 text-align: center;
 font-size: 1.5em;
-padding-left: 20px;
+padding-left: 30px;
 width: 100%;
 }
 .reloj{
   font-family: miFuente;
   width: 100%;
-  padding-left: 20px;
+  padding-left: 30px;
   font-size: 1.5em;
   text-align: center;
  
@@ -484,4 +486,31 @@ small{
   font-family: miFuente;
   font-size: 23px;
   text-align: center;
+}
+#cuidad{
+
+  font-size: 30px;
+
+
+}
+#clima{
+  font-size: 25px;
+}
+#temperatura{
+
+  font-size:25px;
+}
+
+#btnTiempo{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: #000;
+
+  margin-left: 40px;
+
+  margin-right: 40px;
+  font-family: miFuente;
+  font-size: 15px;
+  justify-content: end;
 }

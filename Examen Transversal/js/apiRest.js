@@ -1,4 +1,48 @@
-function consumoApi() {
-    fetch("https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=dfc8e7f4f8a3ab6cff50640b6139fcc0").then(response => response.json())
-    .then(data =>{console.log(data);})
+let latitud;
+let longitud;
+
+
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(function(position) {
+    latitud = position.coords.latitude;
+    longitud = position.coords.longitude;
+    console.log("Latitud1: " + latitud + ", Longitud2: " + longitud);
+
+  });
+} else {
+  console.log("Geolocalización no soportada por este navegador.");
 }
+
+
+
+function consumoApi() {
+
+
+
+  fetch('https://api.openweathermap.org/data/2.5/weather?lat='+latitud+'&lon='+longitud+'&appid=ba9624ec040ad2c2d6e71cbed1728927&lang=es&units=metric')
+    .then(response => response.json())
+    .then(data => {
+      console.log("Latitud: " + latitud + ", Longitud: " + longitud);
+      console.log(data);
+      let parametro = data.weather[0].icon;
+      let url = "https://openweathermap.org/img/wn/"+parametro+"@2x.png"
+
+      let name = document.getElementById("cuidad");
+      let weather = document.getElementById("clima");
+      let main = document.getElementById("temperatura");
+      
+      
+      
+      
+      weather.innerHTML += data.weather[0].description;
+      main.innerHTML += Math.round(data.main.temp)+"°C";
+
+
+      let imagen = document.getElementById("imagen");
+      imagen.src = url;
+      name.innerHTML += data.name;    
+
+    })
+    //.catch(error => console.error(error));//
+}
+
