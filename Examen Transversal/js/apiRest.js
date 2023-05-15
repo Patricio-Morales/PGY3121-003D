@@ -14,10 +14,10 @@ if (navigator.geolocation) {
 }
 
 
-
+document.getElementById("imagen").style.display="none";
 function consumoApi() {
 
-
+document.getElementById("imagen").style.display="inline"
 
   fetch('https://api.openweathermap.org/data/2.5/weather?lat='+latitud+'&lon='+longitud+'&appid=ba9624ec040ad2c2d6e71cbed1728927&lang=es&units=metric')
     .then(response => response.json())

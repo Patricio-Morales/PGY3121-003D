@@ -502,15 +502,15 @@ small{
 }
 
 #btnTiempo{
-  display: flex;
-  align-items: center;
-  background-color: white;
+
+  background-color:#fdcae1;
   color: #000;
-
-  margin-left: 40px;
-
-  margin-right: 40px;
   font-family: miFuente;
-  font-size: 15px;
-  justify-content: end;
+
+}
+
+#imagen{
+
+width: 286px;
+height: 225px;
 }

@@ -5,6 +5,23 @@ document.getElementById("valProd").style.display="none";
 document.getElementById("valCant").style.display="none";
 
 
+function validarTodo() {
+
+	if (document.getElementById("txtSku").value.length==0  &&
+	    document.getElementById("txtProd").value.length==0 &&
+		document.getElementById("txtCant").value.length==0) {
+
+		alert("Error , no se han todos rellenado todos los campos");
+		
+	} else {
+		alert("Campos Agregados Correctamente");
+		
+	}
+	
+}
+
+
+
 
 function validarAgregarSku() {
 	if (document.getElementById("txtSku").value.length==0) {
@@ -29,7 +46,7 @@ function validarAgregarNomProd() {
 	 } else {
 		document.getElementById("valProd").style.display="none";
         document.getElementById("txtProd").classList.remove("is-invalid")
-		document.getElementById("txtSku").classList.add("is-valid")
+		document.getElementById("txtProd").classList.add("is-valid")
 	 }
 }
 

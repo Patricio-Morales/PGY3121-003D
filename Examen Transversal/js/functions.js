@@ -1,42 +1,4 @@
 
-$(document).ready(function(){
-
-
-
-	$("#img-1").click(function(){
-		
-		$("#texto").hide();
-	  
-	})
-	$("#img-1").mouseleave(function(){
-	   
-		$("#texto").fadeIn();
-	   
-	})
-	
-	$("#img-2").click(function(){
-		
-		$("#btn").hide();
-	  
-	})
-	$("#img-2").mouseleave(function(){
-	   
-		$("#btn").fadeIn();
-	   
-	})
-	
-	
-	$("#img-3").click(function(){
-		
-		$("#texto-3").hide();
-	
-	})
-	$("#img-3").mouseleave(function(){
-	   
-		$("#texto-3").fadeIn();
-	   
-	})
-	});
 
 
 const btnSwitch = document.querySelector('#switch');
