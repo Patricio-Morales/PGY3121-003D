@@ -1,0 +1,66 @@
+{% extends "./base.html" %}
+
+{% load static %}
+
+{% block body %}
+
+
+<div class="container mt-5 mb-5">
+  <form action="" id="formMod">
+  <div class="row">
+    <h1 id="txtTitulo">Modificar Producto</h1>
+    <div class="col">
+      <label id="label2" for="txtSku">Codigo del producto o SKU:</label>
+      <input  name ="sku" class="form-control" id="txtSku" type="text" placeholder="EJ: 131SDASD1231">
+      <br>
+    </div>
+    <br>
+    <div class="col">
+      <label id="label2"for="txtProd">Nombre del Producto:</label>
+      <input name ="prod" class="form-control" id="txtProd" type="text" placeholder="EJ: Pegamento 123">
+      <br>
+    </div>
+    <br>
+    <div class="col">
+      <label id="label2"for="txtCant">Cantidad del Producto:</label>
+      <input  name ="cant" class="form-control" id="txtCant" type="text" placeholder="EJ: Pegamento 123">
+      <br>
+    </div>
+    
+      <button   id="btnAgregar"  type="+" class="btn btn-primary--bs-dark-text-emphasis btn-lg ">Modificar</button> 
+      <a id="btnVolver" href="{% url 'inventario' %}" class="btn btn-secondary--bs-dark-text-emphasis  btn-lg mt-5 mb-5">Volver</a>
+    
+  </div>
+</form>
+</div>
+
+
+  
+</div>
+
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title text-center" id="exampleModalLabel">Alerta</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ¿ Seguro que desea Modificar este producto de la lista ?
+            </div>
+            <div class="modal-footer">
+              <button id="btn_modal1" type="button" class="btn btn-secondary--bs-dark-text-emphasis" data-bs-dismiss="modal">Volver</button>
+              <button onclick="eliminar()" id="btnEliminar2" type="button" class="btn btn-primary--bs-dark-text-emphasis" data-bs-dismiss="modal">Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <script src="{% static '/js/jquery-3.6.4.min.js' %}"></script>
+      <script src="{% static '/js/jquery.validate.min.js' %}"></script>
+      <script src="{% static '/js/validarFormJquery.js' %}"></script>
+{% endblock %}  
+

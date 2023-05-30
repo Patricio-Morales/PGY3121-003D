@@ -1,0 +1,516 @@
+@font-face{
+  font-family: miFuente;
+  src: url("fonts/Amelinda.ttf");
+  font-display: white;
+}
+
+
+
+
+#cards_id_info{
+font-family: miFuente;
+
+
+}
+#btn_carrito{
+
+  display: flex;
+  align-items: center;
+  background-color: white;
+  font-family: miFuente;
+  font-size: 30px;
+  justify-content: end;
+}
+.material-icons{
+  font-size: 15px;
+  color: #e79eff;
+}
+.navbar-brand img{
+
+width: 170px;
+height: 100px;
+}
+
+.bg-miColor{
+  background-color: #fdcae1;
+}
+
+#id_cardtext{
+
+  font-size: 35px;
+  font-family: miFuente;
+  background-color: #fdcae1;
+  margin-bottom: 100px;
+}
+
+#id_cardtitle{
+  font-size: 70px;
+  text-align: center;
+  font-family: miFuente;
+  background-color: #fdcae1;
+}
+
+.dropdown-item{
+  font-family: miFuente;
+  font-size: 25px;
+}
+
+.nav-item{
+  font-family: miFuente;
+  font-size: 25px;
+  
+}
+
+#img_car{
+
+  width: 500px;
+  height: 200;
+}
+
+#img_about{
+
+  background-color: #fdcae1;
+}
+.nav-item:hover{
+
+  color: white;
+}
+
+#btn_carrito:hover{
+
+color:#fdcae1;
+}
+.dropdown-menu:hover{
+  color:#fdcae1;
+
+}
+.dropdown-menu{
+ background-color: #fdcae1;
+}
+.dropdown-item:hover{
+  background-color: #fdcae1;
+  color: white;
+}
+
+.contenedorFooter{
+
+      width: 100%;
+      background-color: #fdcae1;
+      display: flex;
+      flex-direction: row;
+      font-family: miFuente;
+      color: black;
+  }
+  .boxFooter{
+    width: 75%;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+.boxFooter2{
+  width: 75%;
+  padding: 20px;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+
+
+
+.boxFooter p{
+  text-align: justify;
+}
+.box{
+  display: flex;
+
+  align-items: center;
+}
+
+.box h3{
+  margin-left: 20px;
+}
+
+
+.miniBox{
+  display: flex;
+  align-items: center;
+}
+.miniBox img{
+  width: 30px;
+  height: 30px;
+}
+
+.miniBox a:hover{
+
+  color: white;
+}
+
+.miniBox h3{
+margin-left: 10px;
+}
+
+#ico_footer{
+  font-size: 30px;
+}
+
+#btn_carrusel{
+font-size: 100px;
+}
+.card-title{
+
+  font-size: 40px;
+}
+.card-body{
+
+  font-size: 20px;
+}
+
+#btn1{
+  font-size: 25px;
+  background-color:  #fdcae1;
+  font-family: miFuente;
+}
+#titulo_prod{
+  font-size: 30px;
+  font-family: miFuente;
+}
+#card_btext{
+  font-size: 30px;
+  font-family: miFuente;
+}
+
+#btn2{
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  background-color:  #fdcae1;
+  font-family: miFuente;
+}
+
+#btn2:hover{
+  color: white;
+}
+
+.nav-link:hover{
+  color: white;
+}
+
+#btn_modal2{
+  font-size: 20px;
+  font-family: miFuente;
+  background-color: #fdcae1;
+}
+#btn_modal1{
+
+  font-size: 20px;
+  font-family: miFuente;
+  background-color: #fdcae1;
+
+}
+
+#btn_modal1:hover{
+color: white;
+}
+#btn_modal2:hover{
+  color:white;
+}
+.modal-body{
+  font-size: 22px;
+  font-family: miFuente;
+}
+#exampleModalLabel{
+  font-family: miFuente;
+  font-size: 30px;
+  text-align: center;
+}
+.modal-header{
+  background-color: #fdcae1;
+}
+
+.offcanvas-title{
+  font-size: 40px;
+  font-family: miFuente;
+}
+
+.offcanvas-header{
+  background-color: #fdcae1;
+}
+
+#btn5{
+  background-color: #fdcae1;
+  font-family: miFuente;
+  font-size: 35px;
+}
+
+#btn1:hover{
+ color: white;
+}
+
+#btn5:hover{
+  color: white;
+}
+
+#tituloForm{
+
+font-family: miFuente;
+}
+
+#btnEditar{
+  background-color: #fdcae1;
+  font-size: 20px;
+}
+#btnEliminar{
+  background-color: red;
+  font-size: 20px;
+}
+
+#tabla_prod{
+  font-family: miFuente;
+  font-size: 25px;
+  align-items: center;
+  text-align:center;
+  margin-bottom: 325px;
+}
+
+
+#SKU{
+  font-family: miFuente;
+  font-size: 20px;
+}
+
+#btnEliminar2{
+  font-family: miFuente;
+  background-color: red;
+  font-size: 20px;
+}
+
+#btnEditar:hover{
+  color: white;
+}
+#btnEliminar:hover{
+  color: white;
+}
+#btnEliminar2:hover{
+  color: white;
+}
+
+
+
+.darkModeSwitch{
+  background: #113528;
+  display:flex;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.darkModeSwitch span{
+  width:30px;
+  height:15px;
+  line-height:30px;
+  display:block;
+  color:#fff;
+
+  background: none;
+}
+.darkModeSwitch::after{
+  display:block;
+  background: #042d26de;
+  width: 1.9rem;
+  height: 1.9rem;
+  position: absolute;
+  top:0;
+  left:0;
+  right:unset;
+  border-radius: 3rem;
+  transition: all .8s ease;
+
+  content: "";
+}
+.darkModeSwitch.active{
+background: #030e2a;
+}
+.darkModeSwitch.active::after{
+left:unset;
+right:0;
+}
+
+.switch {
+  background:#3E065F;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  margin-right: 20px;
+}
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #F1F1F1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.switch.active {
+  background: #fdcae1;
+  color: #000;
+}
+
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+
+#agregar_prod{
+  margin-bottom: 100px;
+}
+ #btnAgregar{
+  background-color: #a3ffac;
+  font-family: miFuente;
+  display: flex;
+  flex-direction: column;
+  font-size: 35px;
+ }
+
+ #btnVolver{
+  background-color: #fdcae1;
+  display: flex;
+  flex-direction: column;
+  font-family: miFuente;
+  font-size: 35px;
+ }
+
+ #btnAgregar:hover{
+color: white;
+ }
+ #btnVolver:hover{
+  color: white;
+ }
+ .wach{
+
+  width: 90%;
+  max-width: 1000px;
+  margin-right: 40px;
+  margin-left: 175px;
+}
+
+.widget{
+ width: 40%;
+ margin: 2px;
+
+}
+.widget p {
+  display: inline-block;
+  line-height: 1em;
+}
+.fecha{
+font-family: miFuente;
+text-align: center;
+font-size: 1.5em;
+padding-left: 30px;
+width: 100%;
+}
+.reloj{
+  font-family: miFuente;
+  width: 100%;
+  padding-left: 30px;
+  font-size: 1.5em;
+  text-align: center;
+ 
+}
+.reloj .caja-segundos{
+  display: inline-block;
+}
+small{
+  color: red;
+}
+#txtTitulo{
+  margin-bottom: 20px;
+  font-family: miFuente;
+  text-align: center;
+  font-size: 50px;
+}
+
+#txtSku{
+
+  font-family: miFuente;
+  font-size: 25px;
+  
+}
+
+#txtProd{
+  font-family: miFuente;
+  font-size: 25px;
+
+}
+
+#txtCant{
+  font-family: miFuente;
+  font-size: 25px;
+
+}
+
+#label2{
+  font-family: miFuente;
+  font-size: 20px;
+}
+
+.error{
+  color: red;
+  font-family: miFuente;
+  font-size: 23px;
+  text-align: center;
+}
+#cuidad{
+
+  font-size: 30px;
+
+
+}
+#clima{
+  font-size: 25px;
+}
+#temperatura{
+
+  font-size:25px;
+}
+
+#btnTiempo{
+
+  background-color:#fdcae1;
+  color: #000;
+  font-family: miFuente;
+
+}
+
+#imagen{
+
+width: 286px;
+height: 225px;
+}

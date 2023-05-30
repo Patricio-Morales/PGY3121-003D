@@ -1,0 +1,42 @@
+{% extends "./base.html" %}
+
+{% load static %}
+        
+         
+{% block body %}   
+        
+       
+    
+<div class="container mt-5 ">
+    <div id="agregar_prod" class="container text-center">
+        <h1 id="tituloForm">Agregar Productos</h1>
+        <br>
+        <div class="form-floating mb-6">
+          <input  onblur="validarAgregarSku()" id="txtSku"type="text" class="form-control md-3" id="floatingInput" placeholder="EJ:216252ASQ">
+          <label id="SKU"for="floatingInput">Codigo del producto o SKU</label>
+          <small id="valSku">Debe ingresar codigo del producto o SKU</small>
+        </div>
+        <br>
+        <div class="form-floating mb-3">
+          <input onblur="validarAgregarNomProd()" id="txtProd"type="text" class="form-control" id="floatingInput" placeholder="EJ:Cuaderno">
+          <label id="SKU"for="floatingInput">Nombre del Producto</label>
+          <small id="valProd">Debe ingresar el Nombre del Producto</small>
+        </div>
+        <br>
+        <div class="form-floating mb-3">
+          <input onblur="validarCantidad()" id="txtCant"type="text" class="form-control" id="floatingInput" placeholder="EJ:Cuaderno">
+          <label id="SKU"for="floatingInput">Cantidad del Producto</label>
+          <small id="valCant">Debe ingresar la cantidad del producto</small> 
+        </div>
+</div>
+
+
+    <a onclick="validarTodo()" id="btnAgregar"class="btn btn-primary--bs-dark-text-emphasis btn-lg ">Agregar</a> 
+    <a id="btnVolver" href="{% url 'inventario' %}" class="btn btn-secondary--bs-dark-text-emphasis  btn-lg mt-5 mb-5">Volver</a>
+</div>
+
+      
+<script src="{% static '/js/validarForm.js' %}"></script>
+      
+{% endblock %}
+    

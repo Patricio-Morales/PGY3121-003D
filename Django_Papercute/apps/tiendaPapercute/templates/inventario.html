@@ -1,0 +1,110 @@
+
+
+
+
+{% extends "./base.html" %}
+
+{% load static %}
+         
+        
+        
+       
+     
+ {% block body %}
+
+  
+  
+    <div class="container mt-5 mb-5">
+      <table id="tabla_prod"class="table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Codigo del Producto o SKU</th>
+            <th scope="col">Nombre del Producto</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="1">
+            <th scope="row"><div class="form-check">
+              <div>
+                <input class="form-check-input" type="checkbox" id="chk1" value="checked" aria-label="...">
+              </div>
+              
+             
+            </div>
+            </th>
+            <td>ASQR4865</td>
+            <td>Cuaderno 100 Hojas Verde</td>
+            <td>150 Unidades</td>
+            <td>
+              <button id="btnEliminar"type="button" class="btn btn-danger--bs-dark-text-emphasis"data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar</button>
+              <a id="btnEditar"type="button" href="{% url 'mod_prod' %}" class="btn btn-primary--bs-dark-text-emphasis">Editar</a>
+              <a id="btnEditar"type="button" href="{% url 'agregar_prod' %}" class="btn btn-primary--bs-dark-text-emphasis">Agregar</a>
+  
+            </td>
+          </tr>
+          <tr id="2">
+            <th scope="row"><div>
+              <input class="form-check-input" type="checkbox" id="chk2" value="" aria-label="...">
+            </div>
+            </th>
+            <td>TYHD1312</td>
+            <td>Lapices BIC Azules</td>
+            <td>20 Unidades</td>
+            <td>
+              <button id="btnEliminar"type="button" class="btn btn-danger--bs-dark-text-emphasis"data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar</button>
+              <a id="btnEditar"type="button" href="{% url 'mod_prod' %}" class="btn btn-primary--bs-dark-text-emphasis">Editar</a>
+              <a id="btnEditar"type="button" href="{% url 'agregar_prod' %}" class="btn btn-primary--bs-dark-text-emphasis">Agregar</a>
+  
+  
+            </td>
+          </tr>
+          <tr id="3">
+            <th scope="row"><div>
+              <input class="form-check-input" type="checkbox" id="chk3" value="" aria-label="...">
+            </div>
+            </th>
+            <td>CVGD5103</td>
+            <td>Caja de 120 Clips Metalicos</td>
+            <td>40 Unidades</td>
+            <td>
+              <button id="btnEliminar"type="button" class="btn btn-danger--bs-dark-text-emphasis"data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar</button>
+              <a id="btnEditar"type="button" href="{% url 'mod_prod' %}" class="btn btn-primary--bs-dark-text-emphasis">Editar</a>
+              <a id="btnEditar"type="button" href="{% url 'agregar_prod' %}" class="btn btn-primary--bs-dark-text-emphasis">Agregar</a>
+  
+  
+            </td>
+        </tbody>
+      </table>
+    </div>
+    </div>
+    
+
+  
+  
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title text-center" id="exampleModalLabel">Alerta</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ¿ Seguro que desea Eliminar este producto de la lista ?
+          </div>
+          <div class="modal-footer">
+            <button id="btn_modal1" type="button" class="btn btn-secondary--bs-dark-text-emphasis" data-bs-dismiss="modal">Volver</button>
+            <button onclick="eliminar()" id="btnEliminar2" type="button" class="btn btn-primary--bs-dark-text-emphasis" data-bs-dismiss="modal">Eliminar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% endblock %}
+
+
+
+
