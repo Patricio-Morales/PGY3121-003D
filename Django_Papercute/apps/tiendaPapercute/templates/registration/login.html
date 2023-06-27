@@ -1,0 +1,28 @@
+{% extends './base.html' %}
+
+{% load static %}
+
+{% block body %}
+
+<div class="container mb-5">
+    <h1 class="text-center mb-5">Se requiere Iniciar Sesion para poder acceder al sistema</h1>
+    <form action="" method="post"> {% csrf_token %}
+        <div class="col mt-5">
+            <div class="row md-6">
+                <label for="username">Usuario (Correo Electronico):</label>
+                <input name="username" type="text" id="txtNombre" class="form-control">
+            </div>
+        </div>
+        <div class="col">
+            <div class="row md-6">
+                <label for="password">Contraseña:</label>
+                <input name="password" type="password" id="txtPass" class="form-control">
+                <a href="registro/">   No tienes cuenta , registrate aqui </a>
+            </div>
+        </div>
+        
+    <button href="/" type="submit"  class="btn btn-primary mt-5"> Iniciar Sesion </button>
+      
+    </form>
+</div>
+{% endblock %}

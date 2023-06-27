@@ -1,0 +1,38 @@
+{% extends './base.html' %}
+
+{% load static %}
+
+{% block body %}
+
+
+<form action="" method="post">
+    {% csrf_token %}
+
+    <div class="card mx-auto mb-5 mt-3" style="width: 30rem;">
+      <div class="card-body">
+        <h2 class="card-title">Complete todos los campos</h2>
+        <!-- {{ form }} -->
+        <label for="" >Nombre de usuario:</label> 
+        <br>
+        {{form.username}}
+        <br>
+        <label for="">Email:</label> 
+        <br>
+        {{form.email}}
+        <br>
+        <label for="">Contraseña:</label> 
+        <br>
+        {{form.password1}}
+        <br>
+        <label for="">Confirmar Contraseña:</label>
+        <br>
+        {{form.password2}}
+        <br>
+        <a href="/" class="card-link">Inicio</a>
+        <a href="{% url 'login' %}" class="card-link">Iniciar sesion</a>
+        <button  href="/" class="btn btn-sm btn-primary float-end" type="submit">Registrarse</button>
+      </div>
+    </div>
+</form>
+
+{% endblock %}

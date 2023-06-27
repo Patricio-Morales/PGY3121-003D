@@ -1,0 +1,72 @@
+{% extends "./base.html" %}
+
+{% load static %}
+
+{% block body %}   
+
+<div class="container">
+    <h2 id="txtTitulo" class="mb-5 mt-5 text-center" novalidate>Editar Productos</h2>
+  
+    <form   id="formAgregarProducto" action="/editarProd" method="POST" enctype="multipart/form-data" novalidate> {% csrf_token %}
+      <div class="row">
+        <div class="col-md-8">
+          <label id="txtSku" for="txtId_prod">Ingrese el SKU del producto:</label>
+          <input readonly value="{{prod.id_prod}}" name="txtId_prod" id="txtId_prod" type="text" class="form-control" required>
+          <!-- <small id="valSku">Debe ingresar el SKU del producto</small> -->
+          <div  class="invalid-feedback" >
+            Debe ingresar el SKU del producto
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <label id="txtProd"  for="txtNom_prod">Ingrese el Nombre Producto:</label>
+          <input value="{{prod.nombre_prod}}" name="txtNom_prod" id="txtNom_prod" type="text" class="form-control" required>
+          <!-- <small id="valProd">Debe ingresar el Nombre del Producto</small> -->
+  
+          <div  class="invalid-feedback">
+            Debe ingresar el Nombre del Producto
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <label id="txtCat"  for="cbxCat">Categoria Producto:</label>
+          <select name="cbxCat" class="form-select " aria-label="Default select example"  required >
+            <option disabled selected value="">Seleccione la categoria</option>
+            {% for cbx in cat %}
+            <option {% if catId == cbx.id_cat  %} selected {% endif %} value="{{cbx.id_cat}}">{{cbx.nombre_cat}}</option>
+            {% endfor %}
+          </select>
+        </div>
+  
+       
+        <div class="col-md-4">
+          <label  id="txtCant" for="txtCant_prod">Ingrese la cantidad del producto:</label>
+          <input value="{{prod.stock_prod}}" name="txtCant_prod" id="txtCant_prod" type="text" class="form-control" required>
+          <!-- <small id="valCant">Debe ingresar la cantidad del producto</small> -->
+  
+          <div  class="invalid-feedback">
+            Debe ingresar la cantidad  del Producto 
+          </div>
+        </div>
+        
+        
+        <div class="col-md-4">
+          <label id="txtPrecio" for="txtprod_Precio">Ingrese el Precio del producto:</label>
+          <input value="{{prod.precio_prod}}" name="txtprod_Precio" id="txtprod_Precio" type="text" class="form-control" required>
+          <!-- <small id="valPrecio">Debe ingresar el precio del producto</small> -->
+  
+          <div  class="invalid-feedback">
+            Debe ingresar el precio  del Producto 
+          </div>
+        </div>
+        
+        <div class="col-md-12">
+          <label id="txtUpload" for="img_Upload">Imagen:</label>
+          <img src="{{prod.img_prod.url}}" alt="" height="100">
+          <input name="img_Upload" accept="image/*" id="img_Upload" type="file" class="form-control" required>
+        </div>
+      </div>
+      <button   type="submit" class="btn btn-success mt-3 mb-3">Editar Producto</button>
+    </form>
+  </div>
+  {% endblock %}

@@ -204,6 +204,10 @@ body.dark #txtTitulo{
  color: white;
 }
 
+body.dark #tbProd{
+  color: white;
+}
+
 body.dark #label2{
   color: white;
 }
@@ -217,4 +221,9 @@ body.dark #imagen{
   background-color:#3E065F;
 
 }
+
+body.dark #formAgregarProducto{
+  color: white;
+}
+
 

@@ -51,14 +51,14 @@ function validarAgregarNomProd() {
 }
 
 function validarCantidad() {
-	if (document.getElementById("txtCant").value.length==0) {
+	if (document.getElementById("txtCant_prod").value.length==0) {
 		document.getElementById("valCant").style.display="inline";
-        document.getElementById("txtCant").classList.add("is-invalid")
+        document.getElementById("txtCant_prod").classList.add("is-invalid")
 		
 	 } else {
 		document.getElementById("valCant").style.display="none";
-        document.getElementById("txtCant").classList.remove("is-invalid")
-		document.getElementById("txtCant").classList.add("is-valid")
+        document.getElementById("txtCant_prod").classList.remove("is-invalid")
+		document.getElementById("txtCant_prod").classList.add("is-valid")
 	 }
 	
 }

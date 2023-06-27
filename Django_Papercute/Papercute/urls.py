@@ -15,9 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-
+from django.conf import settings
+from django.conf.urls.static import static
+from apps.tiendaPapercute.views import agregarProductoCarrito, eliminarProductoCarrito, restarProductoCarrito, limpiarProductoCarrito
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('apps.tiendaPapercute.urls'))
+    path('',include('apps.tiendaPapercute.urls')),
+    path('accounts/',include('django.contrib.auth.urls')),
+    path('agregar/<int:id_prod>/', agregarProductoCarrito, name="Add"),
+    path('eliminar/<int:id_prod>/', eliminarProductoCarrito, name="Del"),
+    path('restar/<int:id_prod>/', restarProductoCarrito, name="Sub"),
+    path('limpiar/', limpiarProductoCarrito, name="CLS"),
+    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     
-]
+
