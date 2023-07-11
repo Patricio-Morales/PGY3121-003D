@@ -34,7 +34,7 @@ $(document).ready(function(){
 	
 	$("#img-3").mouseenter(function(){
 		
-		$("#texto-3").show();
+		$("#texto-3").fadeIn();
 	
 	})
 	$("#img-3").mouseleave(function(){

@@ -7,7 +7,7 @@
 {% load static %}
          
         
-        
+{% block title %} Inventario de Productos{% endblock %}       
        
      
  {% block body %}
@@ -37,8 +37,8 @@
             <td>{{p.id_cat}}</td>
             <td>{{p.stock_prod}}</td>
             <td class="d-flex justify-content-between"> 
-              <a href="/editarProd/{{p.id_prod}}" class=" btn btn-primary mx-3">Editar</button>
-                <a href="/eliminarProd/{{p.id_prod}}" class="btn btn-danger">Eliminar</a>
+              <a  id="btnEditarProd" href="/editarProd/{{p.id_prod}}" class=" btn btn-primary--bs-dark-text-emphasis mx-3">Editar</button>
+                <a id="btnEliminarProd" href="/eliminarProd/{{p.id_prod}}" class="btn btn-danger--bs-dark-text-emphasis">Eliminar</a>
             </td>
           </tr>
           {% endfor %}

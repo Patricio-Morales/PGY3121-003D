@@ -45,10 +45,12 @@
                   </li>
                   <li><a class="dropdown-item" href="{% url 'inventario' %}">Inventario</a></li>
                   <li><a class="dropdown-item" href="{% url 'agregar_prod' %}">Agregar Productos</a></li>
+                  <li><a class="dropdown-item" href="/accounts/logout">Cerrar Sesion</a></li>
                   {% else %}
                   <li><a class="dropdown-item" href="{% url 'lapices' %}">Lapices</a></li>
                   <li><a class="dropdown-item" href="{% url 'cuadernos' %}">Cuadernos</a></li>
                   <li><a class="dropdown-item" href="{% url 'acc_ofi' %}">Accesorios de oficinas</a></li>
+                  <li><a class="dropdown-item" href="/accounts/login">Iniciar Sesion</a></li>
                   {% endif %}
                 </ul>
               </li>
@@ -115,7 +117,7 @@
       
       <footer>
         
-        <div class="contenedorFooter">
+        <div class="contenedorFooter mt-5">
           <div class="boxFooter">
                <h1>Redes Sociales</h1>
          
@@ -166,8 +168,8 @@
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-          <div class="alert alert-primary" role="alert">
-            <table class="table table-bordered">
+          <div id="tbCart" class="alert alert-primary" role="alert">
+            <table id="tbCart" class="table table-bordered border-dark">
               <thead>
                 <tr>
                   <th scope="row md-6" colspan="4" class="text-center">CARRITO</th>
@@ -185,10 +187,10 @@
                   <td>{{value.nombre}}
                     <img src="{{value.imagen}}" alt="" srcset="" height="100">
                   </td>
-                  <td>{{value.precio}}</td>
+                  <td>$ {{value.precio}}</td>
                   <td>
                     <a href="{% url 'Add' value.producto_id  %}" class="badge btn btn-dark badge-dark">+</a>
-                    {{value.acumulado}}
+                    {{value.cantidad}}
                     <a href="{% url 'Sub' value.producto_id %}" class="badge btn btn-dark badge-dark">-</a>
                   </td>
                 </tr>
@@ -196,7 +198,7 @@
               {% else %}
               <tr>
                   <td colspan="4">
-                      <div class="alert alert-danger text-center"> Sin Productos </div>
+                      <div  id="alertProd"  class="alert alert-danger text-center"> Sin Productos </div>
                   </td>
               </tr>
               {% endif %}
@@ -210,7 +212,7 @@
             </div>
             <div class="row text-center">
                 <div class="col-6"><a id="btn5" href="{% url 'CLS' %}" class="btn btn-primary--bs-dark-text-emphasis">Limpiar</a></div>
-                <div class="col-6"><a  id="btn5" href="logro/" class="btn btn-primary--bs-dark-text-emphasis"  >Pagar</a></div>
+                <div class="col-6"><a  id="btn5" href="/logro" class="btn btn-primary--bs-dark-text-emphasis"  >Pagar</a></div>
             </div>
         <!-- <button id="btn5" type="submit" class="btn btn-primary--bs-dark-text-emphasis" data-bs-dismiss="offcanvas" data-bs-target="offcanvasRight">Pagar</button> -->
       </div>

@@ -1,8 +1,9 @@
 {% extends "./base.html" %}
 
 {% load static %}
+{% block title %} Agregar Productos {% endblock %}
+{% block body %}
 
-{% block body %}   
         
 <div class="container">
   <h2 id="txtTitulo" class="mb-5 mt-5 text-center" novalidate>Agregar Productos</h2>
@@ -65,7 +66,11 @@
         <input name="img_Upload" accept="image/*" id="img_Upload" type="file" class="form-control" required>
       </div>
     </div>
-    <button  id="toastTrigger" type="submit" class="btn btn-success mt-3 mb-3">Agregar producto</button>
+    <div class="d-grid gap-2 col-6 mx-auto p-5">
+      <button  id="toastTrigger" type="submit" class="btn btn-success--bs-dark-text-emphasis mt-3 mb-3">Agregar producto</button>
+      <a  id="btnLogin" href="/inventario" class="btn btn-primary--bs-dark-text-emphasis mt-5 mb-2"> Volver a la lista de productos</a>
+    </div>
+    
 
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
       <div id="toastAlert" class="toast" role="alert" aria-live="assertive" aria-atomic="true">

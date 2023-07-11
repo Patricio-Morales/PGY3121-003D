@@ -1,7 +1,7 @@
 {% extends "./base.html" %}
 
 {% load static %}
-
+{% block title %} Editar Productos {% endblock %}
 {% block body %}   
 
 <div class="container">
@@ -66,7 +66,11 @@
           <input name="img_Upload" accept="image/*" id="img_Upload" type="file" class="form-control" required>
         </div>
       </div>
-      <button   type="submit" class="btn btn-success mt-3 mb-3">Editar Producto</button>
+      <div class="d-grid gap-2 col-6 mx-auto p-5">
+        <button  id="btnEditarProduc" type="submit" class="btn btn-primary--bs-dark-text-emphasis mt-5 mb-2">Editar Producto</button>
+        <a  id="btnLogin" href="/inventario" class="btn btn-primary--bs-dark-text-emphasis mt-5 mb-2"> Volver a la lista de productos</a>
+      </div>
+      
     </form>
   </div>
   {% endblock %}

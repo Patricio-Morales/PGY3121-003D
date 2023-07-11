@@ -1,3 +1,6 @@
+from django.conf import settings
+from .models import *
+
 class Carrito:
     def __init__(self, request):
         self.request = request
@@ -16,14 +19,12 @@ class Carrito:
                 "producto_id": producto.id_prod,
                 "nombre": producto.nombre_prod,
                 "imagen":producto.img_prod.url,
-                "precio" :producto.precio_prod,
+                "precio":producto.precio_prod,
                 "acumulado": producto.precio_prod,
                 "cantidad": 1,
-                "stock":producto.stock_prod
             }
         else:
             self.carrito[id]["cantidad"] += 1
-            self.carrito[id]["stock"]-1
             self.carrito[id]["acumulado"] += producto.precio_prod
         self.guardar_carrito()
 
@@ -48,6 +49,3 @@ class Carrito:
     def limpiar(self):
         self.session["carrito"] = {}
         self.session.modified = True
-   
-   
-

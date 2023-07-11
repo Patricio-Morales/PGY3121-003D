@@ -540,3 +540,93 @@ height: 225px;
   font-family: miFuente;
   font-size:25px;
 }
+
+#titleLogin{
+  font-family: miFuente;
+  font-size: 45px;
+  text-align: center;
+}
+
+#btnLogin{
+  font-family: miFuente;
+  font-size: 35px;
+  background-color: #fdcae1;
+}
+
+#btnLogin:hover{
+  
+  color: white;
+}
+
+#txtNameUser{
+  font-family: miFuente;
+  font-size: 35px;
+}
+#txtPassUser{
+  font-family: miFuente;
+  font-size: 35px;
+}
+
+#txtNombre{
+  font-family: miFuente;
+  font-size: 25px;
+}
+#linkReg{
+  font-family: miFuente;
+  font-size: 25px;
+}
+#toastTrigger{
+  font-family: miFuente;
+  font-size: 35px;
+  background-color: #fdcae1;
+}
+
+#toastTrigger:hover{
+  
+  color: white;
+}
+
+#btnEditarProd{
+  font-family: miFuente;
+  font-size: 25px;
+  background-color: #fdcae1;
+}
+
+#btnEliminarProd{
+  font-family: miFuente;
+  background-color: red;
+  font-size: 25px;
+}
+
+#btnEliminarProd:hover{
+  
+  color: white;
+}
+
+#btnEditarProd:hover{
+  
+  color: white;
+}
+
+#tbCart{
+  background-color: #fdcae1;
+  font-family: miFuente;
+  font-size: 20px;
+  color: black;
+}
+
+#alertProd{
+  background-color: #d1052a;
+  font-size: 30px;
+  color: white;
+}
+
+#btnEditarProduc{
+  font-family: miFuente;
+  font-size: 35px;
+  background-color: #fdcae1;
+}
+
+#btnEditarProduc:hover{
+ color: white;
+}

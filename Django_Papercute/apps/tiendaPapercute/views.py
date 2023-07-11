@@ -26,9 +26,9 @@ def inventario(request):
 
 def acc_ofi(request):
    productos = Producto.objects.all()
-   cat_acc = Producto.objects.filter( id_cat=3)
-   stock_acc = Producto.objects.filter(stock_prod__gt=0)
-   return render(request,"acc_ofi.html",{"prod":productos,"cat_acc":cat_acc,"filterStockacc":stock_acc})
+   productos = productos.filter(id_cat=3)
+   productos = productos.filter(stock_prod__gt=0)
+   return render(request,"acc_ofi.html",{"prod":productos})
 
 def pag_Agregar_prod(request):
    productos = Producto.objects.all()
@@ -109,15 +109,15 @@ def eliminarProducto(request,id):
 
 def cuadernos(request):
    productos = Producto.objects.all()
-   cat_cd = Producto.objects.filter( id_cat=1)
-   stock_cd = Producto.objects.filter(stock_prod__gt=0)
-   return render(request,"cuadernos.html",{"prod":productos,"cat_cd":cat_cd,"filterStockcd":stock_cd})
+   productos = productos.filter(id_cat=1)
+   productos = productos.filter(stock_prod__gt=0)
+   return render(request,"cuadernos.html",{"prod":productos})
 
 def lapices(request):
-   prod_lapiz = Producto.objects.all()
-   cat_lapiz = Producto.objects.filter( id_cat=2)
-   stock_lp = Producto.objects.filter(stock_prod__gt=0)
-   return render(request,"lapices.html",{"lapices":prod_lapiz,"cat_lapiz":cat_lapiz,"filterStocklp":stock_lp })
+   prod_lapiz  = Producto.objects.all()
+   prod_lapiz  = prod_lapiz.filter(id_cat=2)
+   prod_lapiz  = prod_lapiz.filter(stock_prod__gt=0)
+   return render(request,"lapices.html",{"lapices":prod_lapiz})
 
 def descripcion(request):
    return render(request,"sobre_nosotros.html")
@@ -144,6 +144,11 @@ def limpiarProductoCarrito(request):
     carrito = Carrito(request)
     carrito.limpiar()
     return redirect('/')
+
+def register(request):
+    return render(request,'register.html')
+
+
 
 def register(request):
     data = {

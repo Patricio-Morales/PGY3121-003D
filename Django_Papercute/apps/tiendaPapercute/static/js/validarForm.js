@@ -10,11 +10,7 @@ if (toastTrigger) {
     });
 }
 
-
-
-
 'use strict'
-
 const forms = document.querySelectorAll('#formAgregarProducto')
 
 // Loop over them and prevent submission

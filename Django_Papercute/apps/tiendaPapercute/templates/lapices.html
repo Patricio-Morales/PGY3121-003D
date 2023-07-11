@@ -7,14 +7,14 @@
 
 <div class="container mt-5 mb-3">
   <div class="row row-cols-1 row-cols-md-3 g-4">
-    {% for lapiz in cat_lapiz %}
+    {% for lapiz in lapices %}
     <div class="col">
       <div class="card" style="width: 18rem;">
         <img src="{{lapiz.img_prod.url}}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 id="titulo_prod" class="card-title">{{lapiz.nombre_prod}}</h5>
           <p  id="card_btext"class="card-text">Precio: ${{lapiz.precio_prod}}</p>
-          <a id="btn2" href="{% url 'Add' lapiz.id_prod %}" class="btn btn-primary--bs-dark-text-emphasis" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <a id="btn2" href="{% url 'Add' lapiz.id_prod %}" class="btn btn-primary--bs-dark-text-emphasis" >
             <i class="material-icons">add_shopping_cart</i>Añadir al carrito
           </a>
 

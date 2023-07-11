@@ -7,14 +7,14 @@
 
 <div class="container container mt-5 mb-3">
   <div class="row row-cols-1 row-cols-md-3 g-4">
-    {% for cd in cat_cd %}
+    {% for cd in prod %}
     <div class="col">
       <div class="card" style="width: 18rem;">
         <img src="{{cd.img_prod.url}}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5  id="titulo_prod" class="card-title">{{cd.nombre_prod}}</h5>
           <p  id="card_btext" class="card-text">Precio: ${{cd.precio_prod}}</p>
-          <a id="btn2" href="{% url 'Add' cd.id_prod %}" class="btn btn-primary--bs-dark-text-emphasis" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <a id="btn2" href="{% url 'Add' cd.id_prod %}" class="btn btn-primary--bs-dark-text-emphasis" >
             <i class="material-icons">add_shopping_cart</i>Añadir al carrito
           </a>
 
@@ -29,7 +29,7 @@
                   Producto Agregado Correctamente a su carrito de compra
                 </div>
                 <div class="modal-footer">
-                  <a  id="btn2" href="{% url 'Add' cd.id_prod %}" class="btn btn-primary--bs-dark-text-emphasis" >Aceptar</a>
+                  <a  id="btn2" href="" class="btn btn-primary--bs-dark-text-emphasis" >Aceptar</a>
                 </div>
               </div>
             </div>

@@ -226,4 +226,62 @@ body.dark #formAgregarProducto{
   color: white;
 }
 
+body.dark #toastTrigger{
+  background-color:#3E065F;
+  color: white;
 
+}
+body.dark #btnLogin{
+  background-color:#3E065F;
+  color: white;
+}
+body.dark #btnLogin:hover{
+  color:#ae3dff;
+
+}
+body.dark #titleLogin{
+  color: white;
+}
+
+body.dark #txtNameUser{
+  color: white;
+}
+
+body.dark #txtPassUser{
+  color: white;
+}
+
+body.dark #btnEliminarProd{
+  color:white;
+}
+
+body.dark #btnEliminarProd:hover{
+  color:#ae3dff;
+}
+
+body.dark #btnEditarProd{
+  color:white;
+  background-color:#3E065F;
+}
+
+body.dark #btnEditarProd:hover{
+  color:#ae3dff;
+}
+
+body.dark #btnEditarProduc{
+  color: white;
+  background-color: #3E065F
+}
+
+body.dark #btnEditarProduc:hover{
+ color: #ae3dff;
+}
+
+body.dark #tbCart{
+  color: white;
+  background-color: #3E065F
+}
+
+body.dark #btn5:hover{
+  color:#ae3dff;
+}
